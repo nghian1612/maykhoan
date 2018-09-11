@@ -1,0 +1,88 @@
+footer
+	background: #333333
+	img 
+		max-width: 200px
+	h3 
+		color: yellow
+	ul 
+		li 
+			a
+				white-space: nowrap
+.ft-bt
+	background: yellow
+	height: 100px
+	.form
+		float: right
+		position: relative
+		top: 80%
+		input
+			margin-top: .5rem
+			height: 30px
+			width: 300px
+			background: #000
+			color: #fff
+		.btn
+			+fz(.8rem)
+			position: absolute
+			width: 70px
+			top: 22%
+			right: 0
+			border-radius: 0
+	small
+		color: #000!important
+		+fz(1rem)
+		margin-top: .85rem
+		white-space: nowrap
+		a 
+			color: #000
++media-breakpoint-up(sm)
+	.ft-bt
+		background: yellow
+		height: 50px
+		.form
+			float: right
+			position: relative
+			top: 10%
+			input
+				margin-top: .5rem
+				height: 32px
+				width: 200px
+			.btn
+				+fz(.8rem)
+				position: absolute
+				right: 1%
+		small
+			color: #000!important
+			+fz(1rem)
+			margin-top: 1rem
+			white-space: nowrap
+			a 
+				color: #000
+
++media-breakpoint-up(md)
+	.ft-bt
+		background: yellow
+		height: 50px
+		small
+			color: #000!important
+			+fz(1rem)
+			+mar(.85rem , 0, 0, 0)
+			a 
+				color: #000
+		.form
+			float: right
+			position: relative
+			top: 10%
+			input
+				margin-top: .5rem
+				height: 30px
+				width: 300px
+				background: #000
+				color: #fff
+			.btn
+				+fz(.8rem)
+				position: absolute
+				width: 70px
+				top: 22%
+				right: 0
+				border-radius: 0

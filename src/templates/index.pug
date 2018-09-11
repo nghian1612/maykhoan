@@ -1,0 +1,138 @@
+extends _layout/layout
+
+//- Các giá trị mặc định cho trang web
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+//- Phần khai báo body
+block body
+	//- Bạn viết code vào đây nhớ là phải mở đầu bằng section ở mỗi khối
+	section.home-slider_1
+		.owl-carousel.owl-theme
+			.item
+				figure
+					img(src="./img/home_slider_1.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-4
+								h2 
+									|Chúng tôi là 
+									br 
+									|FullStack Vietnam
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nulla repellendus saepe a minima ducimus est commodi. Possimus deleniti debitis, accusantium fugit placeat veniam blanditiis. Obcaecati, facilis commodi! Sequi, vel.
+								.btn.btn-light Xem chi tiết
+			.item
+				figure
+					img(src="./img/home_slider_1.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-4
+								h2 
+									|Chúng tôi là 
+									br 
+									|FullStack Vietnam
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nulla repellendus saepe a minima ducimus est commodi. Possimus deleniti debitis, accusantium fugit placeat veniam blanditiis. Obcaecati, facilis commodi! Sequi, vel.
+								.btn.btn-light Xem chi tiết
+			.item
+				figure
+					img(src="./img/home_slider_1.png", alt="")
+				.title
+					.container
+						.row
+							.col-md-4
+								h2 
+									|Chúng tôi là 
+									br 
+									|FullStack Vietnam
+								p Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nulla repellendus saepe a minima ducimus est commodi. Possimus deleniti debitis, accusantium fugit placeat veniam blanditiis. Obcaecati, facilis commodi! Sequi, vel.
+								.btn.btn-light Xem chi tiết
+	section.home-slider_2.mt-5
+		.container
+			.row
+				.col
+					.owl-carousel.owl-theme
+						- for(x=0 ; x<3 ; x++)
+							.item
+								figure
+									img(src="./img/home_slider_2.png", alt="")
+									.title
+										h2 USA'S HOTTEST JEANS
+										p SHOPPING NOW
+	section.home-product.mt-5.mb-0
+		.container
+			.row
+				.col
+					.title
+						.line
+							h2 FULLSTACK VIETNAM
+			.row.mt-5
+					.col-md-3.item
+						figure
+							.boximg
+								img.img-fluid.blockimg(src="./img/home_product_1.png", alt="alt")
+								figcaption 
+									h3.mb-0 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+									p.price $36.59
+					.col-md-3.item
+						figure
+							.boximg
+								img.img-fluid.blockimg(src="./img/home_product_2.png", alt="alt")
+								figcaption 
+									h3.mb-0 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+									p.price $36.59
+					.col-md-3.item
+						figure
+							.boximg
+								img.img-fluid.blockimg(src="./img/home_product_3.png", alt="alt")
+								figcaption 
+									h3.mb-0 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+									p.price $36.59
+					.col-md-3.item
+						figure
+							.boximg
+								img.img-fluid.blockimg(src="./img/home_product_4.png", alt="alt")
+								figcaption 
+									h3.mb-0 TRUNG TÂM ĐÀO TẠO IT CHUYÊN NGHIỆP
+									p.price $36.59
+	section.home-bg.mt-5
+		.container
+			.row
+				.col
+					.item
+						figure
+							img(src="./img/home_bg_new.png", alt="")
+							.title
+								h2 HẠNH PHÚC PHÍA SAU
+								p USA'S HOTTEST JEANS
+							span SALE 50%
+	section.home-bg-new.mt-3
+		.container
+			.row 
+				.col-md-4
+					.item
+						figure
+							img(src="./img/home_new.png", alt="alt")
+				.col-sm-8
+					.title
+						h2 HẠNH PHÚC PHÍA SAU
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quod esse aliquid numquam laborum sint quia illo, ut vitae corrupti cum nobis repellat, quam eius animi, alias in consequatur excepturi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quod esse aliquid numquam laborum sint quia illo, ut vitae corrupti cum nobis repellat, quam eius animi, alias in consequatur excepturi!
+	section.home-clients.mt-5
+		.container
+			.row
+				.col
+					.title
+						.line 
+							h2 FULLSTACK VIETNAM
+			.row.mt-5
+				.col
+					.owl-carousel.owl-theme
+						- for(x=1;x<10;x++)
+							.item
+								if (x < 7)
+									img(src="./img/clients_"+x+".png", alt="")
+								else
+									img(src="./img/clients_"+(x-3)+".png", alt="")

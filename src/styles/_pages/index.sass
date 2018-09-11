@@ -1,0 +1,519 @@
+body
+	background: #000
+	margin: 0
+	padding: 0
+/////////////////////////////////
+// Phần Slider
+/////////////////////////////////
+.home-slider_1
+	.owl-carousel
+		// Phần Slider
+		.item
+			position: relative
+			figure
+				&:before 
+					content: ''
+					display: block
+					position: absolute
+					bottom: 0
+					width: 100%
+					height: 3px
+					box-shadow: 3px 3px 3px 3px $whites inset
+			.title
+				+pad(2rem 0)
+				height: 100%
+				width: 100%
+				display: flex
+				align-items: center
+				color: $whites
+			+media-breakpoint-up(md)
+				.title
+					+pos(abs, 0 null 3rem null)
+					color: $whites
+					h2
+						+fz(2rem)
+						margin-bottom: 2rem	
+					p 
+						+fz(1rem)
+						+lh(1rem)
+					.btn
+						margin-top: .5rem
+						+fz(1.5rem)
+						border-radius: 0
+
+		// Phần Control
+		.owl-dots
+			margin-bottom: 2rem
+.home-slider_2
+	.item
+		position: relative
+		.title
+			h2
+				background: #000
+				color: #fff 
+				+pad(.8rem)
+			p
+				color: yellow
+				+pad(.8rem)
+				position: absolute
+				top: 85%
+	+media-breakpoint-up(lg)
+		.item
+			position: relative
+			.title
+				position: absolute
+				left: 0
+				top: 25%
+				h2
+					background: #000
+					color: #fff 
+					+fz(2.8rem)
+					+fw(bold)
+					+pad(.8rem)
+				p 
+					background: yellow
+					color: #000!important
+					position: absolute
+					top: 90%
+					left: 0
+					+fz(1.2rem)
+					+fw(500)
+					+pad(.5rem)
+	+media-breakpoint-up(sm)
+		.owl-carousel
+			position: relative
+			.owl-dots
+				position: absolute
+				bottom: 1rem
+			.item
+				position: relative
+				.title
+					h2
+						background: #000
+						color: #fff 
+						+pad(.5rem)
+					p 
+						color: yellow
+						+pad(.5rem)
+						position: absolute
+						top: 90%
+	
+	.owl-carousel
+		position: relative
+		.owl-dots
+			position: absolute
+			bottom: 2.5rem
+			left: 50%
+			transform: translateX(-50%)
+		.owl-dot
+			span
+				background: $sun-flower
+				width: 30px
+				height: 5px
+		.owl-dot
+			span
+				background: $sun-flower
+.home-product
+	.title
+		position: relative
+		.line
+			&:before 
+				content: ''
+				display: block
+				width: 100%
+				height: 2px
+				background: #fff
+				position: absolute
+				top: 0
+			h2 
+				color: $whites
+				text-align: center
+				background: #080808
+				+pad(0 .5rem)
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				top: -15px
+				white-space: nowrap
+	.item
+		figure
+			position: relative
+			.boximg
+				display: flex
+				align-items: center
+				justify-content: center
+				.blockimg
+					width: 60%
+					margin: 3rem
+				figcaption
+					position: absolute
+					top: 90%
+					h3 
+						+fz(1rem)
+						+fw(bold)
+						margin-top: 1.5rem
+						color: $whites
+					.price
+						color: #959595
+	+media-breakpoint-up(md)
+		.item
+			figure
+				.boximg
+					img 
+						width: 100%
+					figcaption
+						h3 
+							+fz(1rem)
+							+fw(bold)
+							margin-top: 2rem
+							color: $whites
+						.price
+							color: #959595
+			&:hover
+				figure
+					.boximg
+						.blockimg
+							box-shadow: 0px 0px 0px 5px yellow
+							transition: .5s all ease-in-out
+						figcaption
+							h3 
+								color: yellow
+								transition: .5s all ease-in-out
+							.price
+								color: aqua
+								transition: .5s all ease-in-out
+	+media-breakpoint-up(sm)
+		.item
+			figure
+				.boximg
+					.blockimg
+						display: flex
+						flex: 0 0 50%
+						width: 100%
+					figcaption
+						margin-top: 0
+.home-bg
+	.item
+		position: relative
+		figure
+			span
+				background: #000 
+				color: yellow
+				width: 30px
+				height: 30px
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				text-align: center
+				+fz(.7rem)
+				line-height: .8rem
+				+fw(bold)
+				position: absolute
+				top: 10px
+				right: 10px
+			img
+				width: 100%
+				box-shadow: 0 0 0 5px $whites
+			.title
+				position: absolute
+				h2 
+					background: #000 
+					color: #fff 
+					+fz(2rem)
+					+fw(bold)
+					padding: .5rem .5rem .5rem .5rem
+					margin-top: 1rem
+				p 
+					position: absolute
+					background: yellow
+					color: #000
+					+fz(1rem)
+					+fw(bold)
+					+pad(.5rem)
+	+media-breakpoint-up(sm)
+		.item
+			position: relative
+			figure
+				span
+					background: #000 
+					color: yellow
+					width: 30px
+					height: 30px
+					border-radius: 50%
+					display: flex
+					justify-content: center
+					align-items: center
+					text-align: center
+					+fz(.7rem)
+					line-height: .8rem
+					+fw(bold)
+					position: absolute
+					top: 15px
+					right: 15px
+	+media-breakpoint-up(lg)
+		.item
+			position: relative
+			figure
+				span
+					background: #000 
+					color: yellow
+					width: 60px
+					height: 60px
+					border-radius: 50%
+					display: flex
+					justify-content: center
+					align-items: center
+					text-align: center
+					+fz(1rem)
+					line-height: 1.2rem
+					+fw(bold)
+					position: absolute
+					top: 30px
+					right: 30px
+				img
+					width: 100%
+					box-shadow: 0 0 0 5px $whites
+				.title
+					position: absolute
+					top: 60%
+					left: 50%
+					transform: translateX(-50%)
+					h2 
+						background: #000 
+						color: #fff 
+						white-space: nowrap
+						+fz(3rem)
+						+fw(bold)
+						padding: .5rem 1.5rem 2rem 1.5rem
+					p 
+						position: absolute
+						background: yellow
+						color: #000
+						+fz(1.3rem)
+						+fw(bold)
+						+pad(.7rem)
+						top: 70%
+						left: 27%
+.home-bg-new
+	padding-top: 3rem
+	.item
+		position: relative
+		figure 
+			img 
+				position: absolute
+				box-shadow: 0 0 0 3px #fff000
+				max-width: 60%
+				margin-top: 8rem
+				left: 20%
+				z-index: 1
+	.title
+		position: relative
+		left: 3%
+		padding-right: 15px
+		padding-left: 15px
+		h2 
+			position: absolute
+			background: #262626
+			box-shadow: 0 0 0 3px yellow
+			padding: 0.4rem
+			font-size: 1.5rem
+			white-space: nowrap
+			left: 15%
+			top: -4%
+			color: #fff
+		p 
+			background: #000
+			color: #fff
+			text-align: left
+			padding-left: 1rem
+			padding-right: 1rem
+			padding-top: 20rem
+			padding-bottom: 1rem
+			margin-top: 4rem
+			margin-left: -2rem
+			font-size: 1rem
+			box-shadow: 0 0 0 3px yellow
+	+media-breakpoint-up(sm)
+		.item
+			figure 
+				img 
+					position: absolute
+					left: 50%
+					max-width: 50%
+					margin-top: 10rem
+		.title
+			position: relative
+			top: 5%
+			p 
+				padding-top: 3rem
+				padding-bottom: 2rem
+				padding-right: 5rem
+	+media-breakpoint-up(md)
+		.item
+			position: relative
+			figure 
+				img 
+					position: absolute
+					max-width: 100%
+					left: 0
+					margin-top: 6.55rem
+		.title
+			h2 
+				top: -10%
+				left: 20%
+			p 
+				padding-top: 3rem
+				padding-bottom: 1rem
+				padding-right: 0rem
+	+media-breakpoint-up(lg)
+		.item
+			figure 
+				img 
+					width: 100%
+					box-shadow: 0 0 0 3px $whites
+					margin-top: 4rem
+		.title
+			h2 
+				padding: .8rem
+				+fz(2rem)
+				left: 22%
+				top: -15%
+			p 
+				padding: 3.4rem
+				+fz(1rem)
+	+media-breakpoint-up(xl)
+		.item
+			figure
+				img 
+					width: 100%
+					margin-top: 5rem
+		.title
+			padding: .9rem
+			h2 
+				padding: 1rem
+				margin-top: 6rem
+				margin-left: 1rem
+			p 
+				padding: 4.9rem
+.home-clients
+	.title
+		position: relative
+		.line
+			&:before 
+				content: ''
+				display: block
+				width: 100%
+				height: 2px
+				background: #fff
+				position: absolute
+				top: 0
+			h2 
+				color: $whites
+				text-align: center
+				background: #080808
+				+pad(0 .5rem)
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				top: -15px
+				white-space: nowrap
+	.owl-carousel
+		position: relative
+		.item 
+			display: flex
+			align-items: center
+			justify-content: center
+			+pad(.5rem)
+			img
+				max-width: 80%
+		// Phần Control
+		.owl-nav
+			margin-bottom: 2rem
+			button 
+				i.fa-chevron-left
+					position: absolute
+					top: 30%
+					left: 1%
+					background: yellow
+					width: 2rem
+					height: 2rem
+					+lh(2rem)
+				i.fa-chevron-right
+					position: absolute
+					top: 30%
+					right: 1%
+					background: yellow
+					width: 2rem
+					height: 2rem
+					+lh(2rem)
+	+media-breakpoint-up(sm)
+		.owl-carousel
+			position: relative
+			.item 
+				margin-top: 1rem
+				display: flex
+				align-items: center
+				justify-content: center
+				+pad(.5rem)
+				img
+					max-width: 70%
+			.owl-nav
+				margin-bottom: 2rem
+				button 
+					i.fa-chevron-left
+						position: absolute
+						top: 30%
+						left: 1%
+					i.fa-chevron-right
+						position: absolute
+						top: 30%
+						right: 1%
+	+media-breakpoint-up(md)
+		.owl-carousel
+			position: relative
+			.item 
+				margin-top: 1rem
+				img
+					max-width: 80%
+			.owl-nav
+				margin-bottom: 2rem
+				button
+					i.fa-chevron-left
+						position: absolute
+						top: 27%
+						left: 1%
+					i.fa-chevron-right
+						position: absolute
+						top: 27%
+						right: -1%
+	+media-breakpoint-up(lg)
+		.owl-carousel
+			.item
+				img 
+					max-width: 90%
+					+pad(0)
+			.owl-nav
+				margin-bottom: 2rem
+				button
+					i.fa-chevron-left
+						position: absolute
+						top: 27%
+						left: 0
+					i.fa-chevron-right
+						position: absolute
+						top: 27%
+						right: -2%
+	+media-breakpoint-up(xl)
+		.owl-carousel
+			.item
+				img 
+					max-width: 100%
+			.owl-nav
+				button
+					i.fa-chevron-left
+						position: absolute
+						top: 27%
+					i.fa-chevron-right
+						position: absolute
+						top: 27%
